@@ -147,3 +147,21 @@ p.list-one,.list-two, .list-three {
   background: linear-gradient(to right, #33cc34,#64cda7,#86cef8);
 
 }
+.location-icon,.phone-icon,.email-box {
+  position: absolute;
+  left: 0px;
+
+}
+.location, .phone, .email {
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  line-height: 28px;
+}
+.line {
+  width: 57px;
+  background: #4fcc75;
+  height: 3px;
+  margin: 11px 0px;
+}
