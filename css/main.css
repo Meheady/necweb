@@ -92,7 +92,7 @@ ul li ul {
 .send-logo{
     color: #33cc34;
 }
-.send-text, .send-way-title, .why-choose-title, .offer-title{
+.send-text,.foot-title, .send-way-title, .why-choose-title, .offer-title{
     background: linear-gradient(to right, #33cc34,#86cef8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
@@ -164,4 +164,15 @@ p.list-one,.list-two, .list-three {
   background: #4fcc75;
   height: 3px;
   margin: 11px 0px;
+  margin-top: 15px;
+}
+.tri-angl{
+  padding-right: 5px;
+
+}
+.footcontent {
+  padding-top: 45px;
+}
+.footcontent p a{
+  color: black;
 }
