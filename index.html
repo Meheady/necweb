@@ -37,7 +37,7 @@
                             <a class="nav-link" href="#">FIND LOCATION</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MORE INFORMATION</a>
+                            <a class="nav-link flip" href="#">MORE INFORMATION <span class="indicator"><i class="fa fa-chevron-down fa-xl" aria-hidden="true"></i></span></a>
                             <ul class="submenu">
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Chairman Message</a></li>
@@ -70,25 +70,26 @@
                     money worldwide.
                 </h2>
 
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-12">
                     <div class="row list-icon">
-                        <div class="col-md-1"><span><i class="fa fa-thumbs-o-up fa-3x" style="color:white" aria-hidden="true"></i></span></div>
-                        <div class="col-md-10"><h5>Low fee & Highest Exchange Rate</h5></div>
+                        <div class="col-md-1 col-sm-1"><span><h1><i class="fa fa-thumbs-o-up fa-xl" style="color:white" aria-hidden="true"></i></h1></span></div>
+                        <div class="col-md-11 col-sm-9"><h5>Low fee & Highest Exchange Rate</h5></div>
                     </div>
                     <div class="row list-icon">
-                        <div class="col-md-1"><h1><i class="fa fa-shield fa-xl" style="color:white" aria-hidden="true"></i></h1></div>
-                        <div class="col-md-10"><h5>Safe & Secure</h5></div>
+                        <div class="col-md-1 col-sm-1"><h1><i class="fa fa-shield fa-xl" style="color:white" aria-hidden="true"></i></h1></div>
+                        <div class="col-md-11 col-sm-9"><h5>Safe & Secure</h5></div>
                     </div>
                     <div class="row list-icon">
-                        <div class="col-md-1"><h1><i class="fa fa-rocket fa-xl" style="color:white" aria-hidden="true"></i>
+                        <div class="col-md-1 col-sm-1"><h1><i class="fa fa-rocket fa-xl" style="color:white" aria-hidden="true"></i>
                         </h1></div>
-                        <div class="col-md-10"><h5>Easy, Fast & Convenient</h5></div>
+                        <div class="col-md-11 col-sm-9"><h5>Easy, Fast & Convenient</h5></div>
                     </div>
                     <div class="row list-icon">
-                        <div class="col-md-1"><h1><i class="fa fa-phone fa-xl" style="color:white" aria-hidden="true"></i></h1></div>
-                        <div class="col-md-10"><h5> 24/7 Customer Support</h5></div>
+                        <div class="col-md-1 col-sm-1"><h1><i class="fa fa-phone fa-xl" style="color:white" aria-hidden="true"></i></h1></div>
+                        <div class="col-md-11 col-sm-9"><h5> 24/7 Customer Support</h5></div>
                     </div>
                 </div>
+                <div class="col-md-4"></div>
             </div>
         </div>
     </section>
@@ -96,8 +97,8 @@
     <section class="send-money">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <h1><span class="send-text">Send money online</span> <span class="send-logo"><i class="fa fa-globe fa-xl" aria-hidden="true"></i></span> <span class="send-btn"><a href="#" class="btn btn-success btn-send">SEND NOW</a></span></h1>
+                <div class="col-md-12 mx-auto">
+                    <h1 class="text-center"><span class="send-text">Send money online</span> <span class="send-logo"><i class="fa fa-globe fa-xl" aria-hidden="true"></i></span> <span class="send-btn"><a href="#" class="btn btn-success btn-send">SEND NOW</a></span></h1>
                 </div>
             </div>
         </div>
@@ -336,7 +337,7 @@
         </div>
     </footer>
 
-    <script src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
@@ -353,6 +354,22 @@
                 pagination:false,
                 navigation:true
             });
+
+            
+
+
+
+ 
+                if (window.matchMedia('(max-width: 992px)').matches) {
+                    $(".indicator").click(function(){
+                        $(".submenu").slideToggle("slow");
+                    });
+                }
+                else{
+                    $(".flip").click(function(){
+                        $(".submenu").reset();
+                    });
+                }
         });
     </script>
 </body>

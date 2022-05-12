@@ -16,7 +16,7 @@
     }
 
 li.nav-item a {
-        font-family: 'Poppins', sans-serif;
+        font-family: sans-serif;
         font-weight: 600;
         color: black!important;
 }
@@ -62,9 +62,7 @@ ul li ul {
     margin-bottom: 15px;
     list-style: none;
   }
-  .submenu{
-    transition: 5s;
-  }
+ 
 
 .submenu li a {
     text-decoration: none!important;
@@ -175,4 +173,12 @@ p.list-one,.list-two, .list-three {
 }
 .footcontent p a{
   color: black;
+}
+
+
+/* modify css */
+
+a.nav-link {
+  font-size: 14px;
+  font-weight: bold!important;
 }
