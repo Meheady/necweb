@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ .top-line {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #33cc34,#64cda7,#86cef8);
+}
+
+.btn-gradient {
+        background: linear-gradient(to top, #33cc34,#64cda7,#86cef8);
+        border-radius: 10px;
+    }
+
+li.nav-item a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: black!important;
+}
+li.nav-item {
+    padding:34px 5px;
+}
+a.btn.btn-gradient {
+    width: 100%;
+    color: white!important;
+}
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: rgb(0, 0, 0);
+
+  }
+  .nav-bg{
+      background-color: #fbfbfb;
+  }
+
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 200px;
+    padding: 0px 20px;
+    text-align: left;
+    margin-top: 25px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+    text-decoration: none;
+    border-top: 4px solid #33cc34;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+    list-style: none;
+  }
+  .submenu{
+    transition: 5s;
+  }
+
+.submenu li a {
+    text-decoration: none!important;
+    display: block;
+    color: white!important;
+    border-bottom: 2px dotted #64cda7;
+    padding-bottom: 10px;
+  }
+  ul li {
+    position: relative;
+  }
+  section.main-banner{
+    background-image: url('../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 37px 0px;
+  }
+  .row.list-icon {
+    padding: 8px 0px;
+}
+.btn-send{
+    background: linear-gradient(to top, #33cc34,#64cda7,#86cef8);
+        border-radius: 10px;
+}
+.send-logo{
+    color: #33cc34;
+}
+.send-text, .send-way-title, .why-choose-title, .offer-title{
+    background: linear-gradient(to right, #33cc34,#86cef8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+.send-text h2, .offer-title h2, .send-way-title h2, .why-choose-title h2{
+  font-weight: bold;
+}
+section.send-money {
+    padding: 20px 0px;
+}
+.card-title.card-image img {
+  height: 100px;
+}
+.card-title img {
+  height: 100px;
+}
+.send-way-title{
+  padding: 35px 0px;
+}
+.offer-title{
+  padding: 35px 0px;
+}
+section.send-way,section.slider{
+  padding: 65px 0px;
+  background-color: #f8f4f4;
+}
+.card-send-way {
+  background: linear-gradient(to bottom, #33cc34,#64cda7,#86cef8);
+  transition: all 0.5s ease;
+  border: 3px solid #33cc34;
+  border-radius: 13px;
+}
+.card-send-way:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.why-choose-title{
+  padding: 35px 0px;
+}
+section.why-choose{
+  padding: 65px 0px;
+}
+.card.card-why-choose {
+  border: 3px solid #33cc34;
+}
+.item img{
+  border: 3px solid #33cc34;
+}
