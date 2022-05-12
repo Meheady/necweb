@@ -140,3 +140,10 @@ section.why-choose{
 .item img{
   border: 3px solid #33cc34;
 }
+p.list-one,.list-two, .list-three {
+  line-height: 45px;
+}
+.app-section{
+  background: linear-gradient(to right, #33cc34,#64cda7,#86cef8);
+
+}
