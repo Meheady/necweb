@@ -350,7 +350,7 @@
     <script>
         $(document).ready(function(){
             $(".owl-carousel").owlCarousel({
-                loop:true,
+                loop:false,
                 items: 1,
                 margin:10,
                 autoplay: true,
@@ -377,6 +377,14 @@
                     });
                 }
             new WOW().init();
+
+            $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > 50) {
+                $('.top-header').addClass('fixed');
+            } else {
+                $('.top-header').removeClass('fixed');
+            }
+        });
         });
     </script>
 </body>

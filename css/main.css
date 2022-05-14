@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
  }
+ body{
+   overflow-x: hidden;
+ }
  .top-line {
     height: 4px;
     width: 100%;
@@ -190,4 +193,13 @@ a.nav-link {
   right: -98px;
   top: 165px;
   transform: rotate(89deg);
+}
+.fixed {
+  position:sticky;
+  top:0;
+  z-index: 1111;
+  
+}
+header.top-header {
+  background: #fbfbfb;
 }
