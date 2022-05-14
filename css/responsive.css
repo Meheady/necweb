@@ -49,5 +49,13 @@
     span.send-logo {display: block;text-align: center;}
 
     span.send-btn {display: block;width: 100%;text-align: center;}
+    .pb-xs-3{
+      padding-bottom: 5px;
+    }
     
+  }
+  @media only screen and (max-width: 600px) {
+    .col-xs-6{
+      width: 50%!important;
+    }
   }
